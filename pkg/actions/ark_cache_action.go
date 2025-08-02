@@ -1,10 +1,10 @@
 package actions
 
 import (
+	commonInternal "github.com/Kalybus/ark-sdk-golang/internal/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common"
+	commonArgs "github.com/Kalybus/ark-sdk-golang/pkg/common/args"
 	"github.com/spf13/cobra"
-	commonInternal "github.com/cyberark/ark-sdk-golang/internal/common"
-	"github.com/cyberark/ark-sdk-golang/pkg/common"
-	commonArgs "github.com/cyberark/ark-sdk-golang/pkg/common/args"
 	"os"
 	"reflect"
 )

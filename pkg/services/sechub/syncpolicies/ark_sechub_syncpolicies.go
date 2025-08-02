@@ -7,11 +7,11 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	"github.com/cyberark/ark-sdk-golang/pkg/common"
-	"github.com/cyberark/ark-sdk-golang/pkg/common/isp"
-	syncpoliciesmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/sechub/syncpolicies"
-	"github.com/cyberark/ark-sdk-golang/pkg/services"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common/isp"
+	syncpoliciesmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sechub/syncpolicies"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services"
 	"github.com/mitchellh/mapstructure"
 )
 

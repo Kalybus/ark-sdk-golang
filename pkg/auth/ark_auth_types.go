@@ -1,7 +1,7 @@
 package auth
 
 import (
-	"github.com/cyberark/ark-sdk-golang/pkg/models/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
 	"slices"
 )
 

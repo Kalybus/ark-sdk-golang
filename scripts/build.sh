@@ -12,7 +12,7 @@ fi
 
 if [ -z "$BUILD_VERSION" ]
 then
-	export BUILD_VERSION="v1.0.0"
+	export BUILD_VERSION="v1.2.0"
 fi
 
 if [ -z "$BUILD_NUMBER" ]
@@ -22,7 +22,7 @@ fi
 
 SCRIPTPATH=$(dirname "$0")
 
-IN_PATH=$SCRIPTPATH/../cmd/.
+IN_PATH=$SCRIPTPATH/../cmd/ark/.
 OUT_PATH=$SCRIPTPATH/../bin
 
 function check_if_exists() {

@@ -1,13 +1,13 @@
 package services
 
 import (
-	"github.com/cyberark/ark-sdk-golang/pkg/models/actions"
-	sechubconfiguration "github.com/cyberark/ark-sdk-golang/pkg/models/services/sechub/configuration"
-	sechubfilters "github.com/cyberark/ark-sdk-golang/pkg/models/services/sechub/filters"
-	sechubscans "github.com/cyberark/ark-sdk-golang/pkg/models/services/sechub/scans"
-	sechubsecrets "github.com/cyberark/ark-sdk-golang/pkg/models/services/sechub/secrets"
-	sechubsecretstores "github.com/cyberark/ark-sdk-golang/pkg/models/services/sechub/secretstores"
-	sechubsyncpolicies "github.com/cyberark/ark-sdk-golang/pkg/models/services/sechub/syncpolicies"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/actions"
+	sechubconfiguration "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sechub/configuration"
+	sechubfilters "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sechub/filters"
+	sechubscans "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sechub/scans"
+	sechubsecrets "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sechub/secrets"
+	sechubsecretstores "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sechub/secretstores"
+	sechubsyncpolicies "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sechub/syncpolicies"
 )
 
 // ServiceInfoActionToSchemaMap is a map that defines the mapping between Sec Hub Service Info action names and their corresponding schema types.

@@ -2,14 +2,14 @@ package auth
 
 import (
 	"errors"
-	"github.com/cyberark/ark-sdk-golang/pkg/profiles"
+	"github.com/Kalybus/ark-sdk-golang/pkg/profiles"
 	"net/url"
 	"slices"
 	"time"
 
-	"github.com/cyberark/ark-sdk-golang/pkg/common"
-	"github.com/cyberark/ark-sdk-golang/pkg/models"
-	"github.com/cyberark/ark-sdk-golang/pkg/models/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
 )
 
 const (

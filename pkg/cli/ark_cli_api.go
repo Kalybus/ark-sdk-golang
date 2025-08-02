@@ -1,9 +1,9 @@
 package cli
 
 import (
-	api "github.com/cyberark/ark-sdk-golang/pkg"
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	"github.com/cyberark/ark-sdk-golang/pkg/models"
+	api "github.com/Kalybus/ark-sdk-golang/pkg"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models"
 )
 
 // ArkCLIAPI is a struct that represents the Ark CLI API client.

@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
+	"github.com/Kalybus/ark-sdk-golang/pkg/actions"
+	"github.com/Kalybus/ark-sdk-golang/pkg/profiles"
 	"github.com/spf13/cobra"
-	"github.com/cyberark/ark-sdk-golang/pkg/actions"
-	"github.com/cyberark/ark-sdk-golang/pkg/profiles"
 	"os"
 )
 
