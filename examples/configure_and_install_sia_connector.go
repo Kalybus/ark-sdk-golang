@@ -2,12 +2,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	authmodels "github.com/cyberark/ark-sdk-golang/pkg/models/auth"
-	cmgrmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/cmgr"
-	accessmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/sia/access"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/cmgr"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/sia"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	authmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
+	cmgrmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/cmgr"
+	accessmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sia/access"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/cmgr"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/sia"
 	"os"
 )
 

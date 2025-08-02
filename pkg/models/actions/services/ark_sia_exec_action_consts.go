@@ -1,15 +1,15 @@
 package services
 
 import (
-	"github.com/cyberark/ark-sdk-golang/pkg/models/actions"
-	siaaccess "github.com/cyberark/ark-sdk-golang/pkg/models/services/sia/access"
-	siak8s "github.com/cyberark/ark-sdk-golang/pkg/models/services/sia/k8s"
-	siasecretsdb "github.com/cyberark/ark-sdk-golang/pkg/models/services/sia/secrets/db"
-	siasecretsvm "github.com/cyberark/ark-sdk-golang/pkg/models/services/sia/secrets/vm"
-	siasshca "github.com/cyberark/ark-sdk-golang/pkg/models/services/sia/sshca"
-	siasso "github.com/cyberark/ark-sdk-golang/pkg/models/services/sia/sso"
-	siaworkspacesdb "github.com/cyberark/ark-sdk-golang/pkg/models/services/sia/workspaces/db"
-	siatargetsets "github.com/cyberark/ark-sdk-golang/pkg/models/services/sia/workspaces/targetsets"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/actions"
+	siaaccess "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sia/access"
+	siak8s "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sia/k8s"
+	siasecretsdb "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sia/secrets/db"
+	siasecretsvm "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sia/secrets/vm"
+	siasshca "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sia/sshca"
+	siasso "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sia/sso"
+	siaworkspacesdb "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sia/workspaces/db"
+	siatargetsets "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sia/workspaces/targetsets"
 )
 
 // SSOActionToSchemaMap is a map that defines the mapping between SSO action names and their corresponding schema types.

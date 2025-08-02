@@ -8,11 +8,11 @@ import (
 	"os"
 	"regexp"
 
+	commonArgs "github.com/Kalybus/ark-sdk-golang/pkg/common/args"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models"
+	"github.com/Kalybus/ark-sdk-golang/pkg/profiles"
 	"github.com/confluentinc/go-editor"
 	"github.com/spf13/cobra"
-	commonArgs "github.com/cyberark/ark-sdk-golang/pkg/common/args"
-	"github.com/cyberark/ark-sdk-golang/pkg/models"
-	"github.com/cyberark/ark-sdk-golang/pkg/profiles"
 )
 
 // ArkProfilesAction is a struct that implements the ArkAction interface for managing profiles.

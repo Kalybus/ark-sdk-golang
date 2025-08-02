@@ -1,9 +1,9 @@
 package services
 
 import (
-	"github.com/cyberark/ark-sdk-golang/pkg/models/actions"
-	pcloudaccounts "github.com/cyberark/ark-sdk-golang/pkg/models/services/pcloud/accounts"
-	pcloudsafes "github.com/cyberark/ark-sdk-golang/pkg/models/services/pcloud/safes"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/actions"
+	pcloudaccounts "github.com/Kalybus/ark-sdk-golang/pkg/models/services/pcloud/accounts"
+	pcloudsafes "github.com/Kalybus/ark-sdk-golang/pkg/models/services/pcloud/safes"
 )
 
 // AccountsActionToSchemaMap is a map that defines the mapping between Ark PCloud action names and their corresponding schema types.

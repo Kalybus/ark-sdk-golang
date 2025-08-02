@@ -8,7 +8,7 @@ builds:
     goarch:
       - amd64
     env: [CGO_ENABLED=0]
-    main: ./cmd/ark.go
+    main: ./cmd/ark/ark.go
     ldflags:
       - -s -w -X 'main.GitCommit={{.Commit}}' -X 'main.BuildDate={{.Date}}' -X 'main.Version={{.Env.BUILD_VERSION}}' -X 'main.BuildNumber={{.Env.BUILD_NUMBER}}'
     binary: ark-{{ .Os }}
@@ -18,7 +18,7 @@ builds:
     goarch:
       - amd64
     env: [CGO_ENABLED=0]
-    main: ./cmd/ark.go
+    main: ./cmd/ark/ark.go
     ldflags:
       - -X 'main.GitCommit={{.Commit}}' -X 'main.BuildDate={{.Date}}' -X 'main.Version={{.Env.BUILD_VERSION}}' -X 'main.BuildNumber={{.Env.BUILD_NUMBER}}'
     binary: ark-windows
@@ -31,5 +31,5 @@ archives:
 
 release:
   github:
-    owner: cyberark
+    owner: Kalybus
     name: ark-sdk-golang

@@ -1,4 +1,4 @@
-module github.com/cyberark/ark-sdk-golang
+module github.com/Kalybus/ark-sdk-golang
 
 go 1.24.0
 

@@ -2,9 +2,9 @@ package common
 
 import (
 	"encoding/json"
-	"github.com/cyberark/ark-sdk-golang/internal/common"
-	"github.com/cyberark/ark-sdk-golang/pkg/models"
-	"github.com/cyberark/ark-sdk-golang/pkg/models/auth"
+	"github.com/Kalybus/ark-sdk-golang/internal/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
 	"os"
 	"runtime"
 	"strings"

@@ -1,7 +1,7 @@
 package connections
 
 import (
-	connectionsmodels "github.com/cyberark/ark-sdk-golang/pkg/models/common/connections"
+	connectionsmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/common/connections"
 )
 
 // ArkConnection is an interface that defines methods for managing Ark connections.

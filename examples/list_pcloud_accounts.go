@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	authmodels "github.com/cyberark/ark-sdk-golang/pkg/models/auth"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/pcloud"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	authmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/pcloud"
 	"os"
 )
 

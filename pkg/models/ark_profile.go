@@ -2,7 +2,7 @@ package models
 
 import (
 	"encoding/json"
-	"github.com/cyberark/ark-sdk-golang/pkg/models/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
 )
 
 // ArkProfile represents a profile for the Ark SDK.

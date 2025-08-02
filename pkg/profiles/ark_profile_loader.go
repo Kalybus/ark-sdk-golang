@@ -2,7 +2,7 @@ package profiles
 
 import (
 	"encoding/json"
-	"github.com/cyberark/ark-sdk-golang/pkg/models"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models"
 	"os"
 	"path/filepath"
 )

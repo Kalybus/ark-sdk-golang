@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	authmodels "github.com/cyberark/ark-sdk-golang/pkg/models/auth"
-	directoriesmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/identity/directories"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/identity"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	authmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
+	directoriesmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/identity/directories"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/identity"
 	"os"
 )
 

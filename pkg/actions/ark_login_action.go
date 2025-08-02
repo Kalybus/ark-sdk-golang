@@ -3,14 +3,14 @@ package actions
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth/identity"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common/args"
+	authmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/profiles"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	"github.com/cyberark/ark-sdk-golang/pkg/auth/identity"
-	"github.com/cyberark/ark-sdk-golang/pkg/common"
-	"github.com/cyberark/ark-sdk-golang/pkg/common/args"
-	authmodels "github.com/cyberark/ark-sdk-golang/pkg/models/auth"
-	"github.com/cyberark/ark-sdk-golang/pkg/profiles"
 	"slices"
 )
 

@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	authmodels "github.com/cyberark/ark-sdk-golang/pkg/models/auth"
-	accountsmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/pcloud/accounts"
-	safesmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/pcloud/safes"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/pcloud"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	authmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
+	accountsmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/pcloud/accounts"
+	safesmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/pcloud/safes"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/pcloud"
 	"os"
 )
 

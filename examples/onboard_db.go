@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	authmodels "github.com/cyberark/ark-sdk-golang/pkg/models/auth"
-	dbsecretsmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/sia/secrets/db"
-	dbmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/sia/workspaces/db"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/sia"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	authmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
+	dbsecretsmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sia/secrets/db"
+	dbmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sia/workspaces/db"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/sia"
 	"os"
 )
 

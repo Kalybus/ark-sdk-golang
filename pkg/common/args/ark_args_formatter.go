@@ -3,10 +3,10 @@ package args
 import (
 	"fmt"
 	"github.com/Iilun/survey/v2"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common"
 	"github.com/fatih/color"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
-	"github.com/cyberark/ark-sdk-golang/pkg/common"
 	"os"
 )
 

@@ -1,14 +1,14 @@
 package sechub
 
 import (
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/sechub/configuration"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/sechub/filters"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/sechub/scans"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/sechub/secrets"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/sechub/secretstores"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/sechub/serviceinfo"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/sechub/syncpolicies"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/sechub/configuration"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/sechub/filters"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/sechub/scans"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/sechub/secrets"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/sechub/secretstores"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/sechub/serviceinfo"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/sechub/syncpolicies"
 )
 
 // ArkSecHubAPI is a struct that provides access to the Ark SecHub API as a wrapped set of services.

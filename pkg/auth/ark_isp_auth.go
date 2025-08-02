@@ -3,11 +3,11 @@ package auth
 import (
 	"encoding/base64"
 	"errors"
-	"github.com/cyberark/ark-sdk-golang/pkg/auth/identity"
-	"github.com/cyberark/ark-sdk-golang/pkg/common"
-	"github.com/cyberark/ark-sdk-golang/pkg/models"
-	"github.com/cyberark/ark-sdk-golang/pkg/models/auth"
-	commonmodels "github.com/cyberark/ark-sdk-golang/pkg/models/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth/identity"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
+	commonmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/common"
 	"time"
 )
 

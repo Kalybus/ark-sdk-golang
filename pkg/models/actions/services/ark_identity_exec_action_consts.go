@@ -1,10 +1,10 @@
 package services
 
 import (
-	"github.com/cyberark/ark-sdk-golang/pkg/models/actions"
-	directoriesmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/identity/directories"
-	rolesmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/identity/roles"
-	usersmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/identity/users"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/actions"
+	directoriesmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/identity/directories"
+	rolesmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/identity/roles"
+	usersmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/identity/users"
 )
 
 // DirectoriesActionToSchemaMap is a map that defines the mapping between Directories action names and their corresponding schema types.
