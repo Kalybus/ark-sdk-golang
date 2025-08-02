@@ -67,9 +67,9 @@ TL;DR
 Installation
 ============
 
-One can install the SDK via the following command:
+One can install the CLI via the following command:
 ```shell
-go install github.com/cyberark/ark-sdk-golang
+go install github.com/Kalybus/ark-sdk-golang/cmd/ark@cli
 ```
 
 CLI Usage
