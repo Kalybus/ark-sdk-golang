@@ -32,6 +32,8 @@ func (a *ArkAuthProfile) UnmarshalJSON(data []byte) error {
 		settings = &IdentityArkAuthMethodSettings{}
 	case IdentityServiceUser:
 		settings = &IdentityServiceUserArkAuthMethodSettings{}
+	case IdentityPKCE:
+		settings = &IdentityPKCEAuthMethodSettings{}
 	case Direct:
 		settings = &DirectArkAuthMethodSettings{}
 	case Default:

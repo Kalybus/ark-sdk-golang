@@ -7,6 +7,7 @@ import (
 	"github.com/cyberark/ark-sdk-golang/pkg/common"
 	"github.com/cyberark/ark-sdk-golang/pkg/models"
 	"github.com/cyberark/ark-sdk-golang/pkg/models/auth"
+	modelsauth "github.com/cyberark/ark-sdk-golang/pkg/models/auth"
 	commonmodels "github.com/cyberark/ark-sdk-golang/pkg/models/common"
 	"time"
 )
@@ -22,7 +23,7 @@ const (
 )
 
 var (
-	ispAuthMethods               = []auth.ArkAuthMethod{auth.Identity, auth.IdentityServiceUser}
+	ispAuthMethods               = []auth.ArkAuthMethod{auth.Identity, auth.IdentityServiceUser, auth.IdentityPKCE}
 	ispDefaultAuthMethod         = auth.Identity
 	ispDefaultAuthMethodSettings = auth.IdentityArkAuthMethodSettings{}
 )
@@ -181,12 +182,98 @@ func (a *ArkISPAuth) performIdentityServiceUserAuthentication(profile *models.Ar
 	}, nil
 }
 
+func (a *ArkISPAuth) performIdentityPKCEAuthentication(
+	profile *models.ArkProfile,
+	authProfile *modelsauth.ArkAuthProfile,
+	force bool,
+) (*modelsauth.ArkToken, error) {
+	methodSettings := authProfile.AuthMethodSettings.(*auth.IdentityPKCEAuthMethodSettings)
+	identityAuth, err := identity.NewArkIdentityPKCE(
+		authProfile.Username,
+		methodSettings.TenantSubdomain,
+		a.Logger,
+		a.CacheAuthentication,
+		a.CacheAuthentication,
+		profile,
+	)
+	if err != nil {
+		a.Logger.Error("Failed to create identity security platform (PKCE) object with user: %v", err)
+		return nil, err
+	}
+	err = identityAuth.AuthIdentity(profile, force)
+	if err != nil {
+		a.Logger.Error("Failed to authenticate to identity security platform (PKCE) with user: %v", err)
+		return nil, err
+	}
+	env := commonmodels.GetDeployEnv()
+	marshaledCookies, err := common.MarshalCookies(identityAuth.Session().GetCookieJar())
+	if err != nil {
+		a.Logger.Error("Failed to marshal cookies: %v", err)
+		return nil, err
+	}
+	return &auth.ArkToken{
+		Token:        identityAuth.SessionToken(),
+		RefreshToken: identityAuth.RefreshToken(),
+		Username:     authProfile.Username,
+		Endpoint:     identityAuth.IdentityURL(),
+		TokenType:    auth.JWT,
+		AuthMethod:   auth.IdentityPKCE,
+		ExpiresIn:    identityAuth.SessionExpiration(),
+		Metadata: map[string]interface{}{
+			"env":     env,
+			"cookies": base64.StdEncoding.EncodeToString(marshaledCookies),
+		},
+	}, nil
+}
+
+func (a *ArkISPAuth) performIdentityPKCERefreshAuthentication(profile *models.ArkProfile, authProfile *auth.ArkAuthProfile, token *auth.ArkToken) (*auth.ArkToken, error) {
+	methodSettings := authProfile.AuthMethodSettings.(*auth.IdentityPKCEAuthMethodSettings)
+	identityAuth, err := identity.NewArkIdentityPKCE(
+		authProfile.Username,
+		methodSettings.TenantSubdomain,
+		a.Logger,
+		a.CacheAuthentication,
+		a.CacheAuthentication,
+		profile,
+	)
+	if err != nil {
+		a.Logger.Error("Failed to create identity security platform object: %v", err)
+		return nil, err
+	}
+	err = identityAuth.RefreshAuthIdentity(profile, false)
+	if err != nil {
+		a.Logger.Error("Failed to refresh authentication to identity security platform: %v", err)
+		return nil, err
+	}
+	env := commonmodels.GetDeployEnv()
+	marshaledCookies, err := common.MarshalCookies(identityAuth.Session().GetCookieJar())
+	if err != nil {
+		a.Logger.Error("Failed to marshal cookies: %v", err)
+		return nil, err
+	}
+	return &auth.ArkToken{
+		Token:        identityAuth.SessionToken(),
+		RefreshToken: identityAuth.RefreshToken(),
+		Username:     authProfile.Username,
+		Endpoint:     identityAuth.IdentityURL(),
+		TokenType:    auth.JWT,
+		AuthMethod:   auth.Identity,
+		ExpiresIn:    identityAuth.SessionExpiration(),
+		Metadata: map[string]interface{}{
+			"env":     env,
+			"cookies": base64.StdEncoding.EncodeToString(marshaledCookies),
+		},
+	}, nil
+}
+
 // performAuthentication performs authentication to the ISP using the specified auth method.
 func (a *ArkISPAuth) performAuthentication(profile *models.ArkProfile, authProfile *auth.ArkAuthProfile, secret *auth.ArkSecret, force bool) (*auth.ArkToken, error) {
 	a.Logger.Info("Performing authentication to ISP")
 	switch authProfile.AuthMethod {
 	case auth.Identity, auth.Default:
 		return a.performIdentityAuthentication(profile, authProfile, secret, force)
+	case auth.IdentityPKCE:
+		return a.performIdentityPKCEAuthentication(profile, authProfile, force)
 	case auth.IdentityServiceUser:
 		return a.performIdentityServiceUserAuthentication(profile, authProfile, secret, force)
 	default:
@@ -197,10 +284,14 @@ func (a *ArkISPAuth) performAuthentication(profile *models.ArkProfile, authProfi
 // PerformRefreshAuthentication performs refresh authentication to the ISP.
 func (a *ArkISPAuth) performRefreshAuthentication(profile *models.ArkProfile, authProfile *auth.ArkAuthProfile, token *auth.ArkToken) (*auth.ArkToken, error) {
 	a.Logger.Info("Performing refresh authentication to ISP")
-	if authProfile.AuthMethod == auth.Identity || authProfile.AuthMethod == auth.Default {
+	switch authProfile.AuthMethod {
+	case auth.Identity, auth.Default:
 		return a.performIdentityRefreshAuthentication(profile, authProfile, token)
+	case auth.IdentityPKCE:
+		return a.performIdentityPKCERefreshAuthentication(profile, authProfile, token)
+	default:
+		return token, nil
 	}
-	return token, nil
 }
 
 // LoadAuthentication loads the authentication token from the cache or performs authentication if not found.
