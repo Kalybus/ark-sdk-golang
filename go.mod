@@ -19,6 +19,7 @@ require (
 	github.com/spf13/viper v1.20.1
 	github.com/toqueteos/webbrowser v1.2.0
 	golang.org/x/crypto v0.37.0
+	golang.org/x/oauth2 v0.30.0
 	golang.org/x/text v0.24.0
 )
 

@@ -6,6 +6,7 @@ type ArkAuthMethod string
 // Authentication methods supported by the Ark SDK.
 const (
 	Identity            ArkAuthMethod = "identity"
+	IdentityPKCE        ArkAuthMethod = "identity_pkce"
 	IdentityServiceUser ArkAuthMethod = "identity_service_user"
 	Direct              ArkAuthMethod = "direct"
 	Default             ArkAuthMethod = "default"
@@ -14,6 +15,10 @@ const (
 
 // ArkAuthMethodSettings is an interface that defines the settings for different authentication methods.
 type ArkAuthMethodSettings interface{}
+
+type IdentityPKCEAuthMethodSettings struct {
+	TenantSubdomain string `json:"tenant_subdomain" mapstructure:"tenant_subdomain" validate:"required" flag:"tenant-subdomain" desc:"Tenant Subdomain"`
+}
 
 // IdentityArkAuthMethodSettings is a struct that represents the settings for the Identity authentication method.
 type IdentityArkAuthMethodSettings struct {
@@ -42,6 +47,7 @@ type DefaultArkAuthMethodSettings struct{}
 
 // ArkAuthMethodSettingsMap is a map that associates each ArkAuthMethod with its corresponding settings struct.
 var ArkAuthMethodSettingsMap = map[ArkAuthMethod]interface{}{
+	IdentityPKCE:        &IdentityPKCEAuthMethodSettings{},
 	Identity:            &IdentityArkAuthMethodSettings{},
 	IdentityServiceUser: &IdentityServiceUserArkAuthMethodSettings{},
 	Direct:              &DirectArkAuthMethodSettings{},
@@ -51,6 +57,7 @@ var ArkAuthMethodSettingsMap = map[ArkAuthMethod]interface{}{
 // ArkAuthMethodsDescriptionMap is a map that provides descriptions for each ArkAuthMethod.
 var ArkAuthMethodsDescriptionMap = map[ArkAuthMethod]string{
 	Identity:            "Identity Personal User",
+	IdentityPKCE:        "Identity Personal User (Browser)",
 	IdentityServiceUser: "Identity Service User",
 	Direct:              "Direct Endpoint Access",
 	Default:             "Default Authenticator Method",
