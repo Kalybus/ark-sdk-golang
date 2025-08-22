@@ -236,13 +236,12 @@ func (ai *ArkIdentityPKCE) AuthIdentity(profile *models.ArkProfile, force bool) 
 		return fmt.Errorf("error updating oauth2 token: %v", err)
 	}
 	ai.logger.Info(fmt.Sprintf("Created a user session (PKCE) on tenant [%s] with user [%s] to platform", ai.tenantSubdomain, ai.username))
-	// Save in cache
-	if ai.cacheAuthentication {
-		if err := ai.saveCache(profile); err != nil {
-			return err
-		}
+	// Refresh the access token to get a proper platform token
+	// The token obtained above is not authorized to perform API calls to the platform
+	err = ai.RefreshAuthIdentity(profile, force)
+	if err != nil {
+		return fmt.Errorf("error refreshing the oauth token for a platform token: %v", err)
 	}
-
 	return nil
 }
 
