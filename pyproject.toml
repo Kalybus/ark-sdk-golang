@@ -9,7 +9,7 @@ classifiers = [
     'Intended Audience :: Developers',
     'Natural Language :: English'
 ]
-repository = "https://github.com/cyberark/ark-sdk-golang"
+repository = "https://github.com/Kalybus/ark-sdk-golang"
 
 [tool.poetry.group.dev.dependencies]
 mike = "*"

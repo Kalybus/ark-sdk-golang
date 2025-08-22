@@ -1,8 +1,8 @@
 package services
 
 import (
-	"github.com/cyberark/ark-sdk-golang/pkg/models/actions"
-	"github.com/cyberark/ark-sdk-golang/pkg/models/services/sm"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/actions"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/services/sm"
 )
 
 // SMActionToSchemaMap is a map that defines the mapping between SM action names and their corresponding schema types.

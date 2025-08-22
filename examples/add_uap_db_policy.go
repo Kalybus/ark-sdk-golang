@@ -2,14 +2,14 @@ package main
 
 import (
 	"fmt"
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	authmodels "github.com/cyberark/ark-sdk-golang/pkg/models/auth"
-	commonmodels "github.com/cyberark/ark-sdk-golang/pkg/models/common"
-	"github.com/cyberark/ark-sdk-golang/pkg/models/services/sia/workspaces/db"
-	commonuapmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/common"
-	uapsia "github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/sia/common"
-	uapdbmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/sia/db"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/uap"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	authmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
+	commonmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/services/sia/workspaces/db"
+	commonuapmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/common"
+	uapsia "github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/sia/common"
+	uapdbmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/sia/db"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/uap"
 	"os"
 )
 

@@ -41,4 +41,4 @@ type ArkSIAVMSecret struct {
 }
 ```
 
-All models can be found [here](https://github.com/cyberark/ark-sdk-golang/tree/main/pkg/models), and are separated into folders according to type.
+All models can be found [here](https://github.com/Kalybus/ark-sdk-golang/tree/main/pkg/models), and are separated into folders according to type.

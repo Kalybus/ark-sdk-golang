@@ -13,7 +13,7 @@ Here's an example of how to initialize and use an authenticator:
 package main
 
 import (
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
 )
 
 func main() {
@@ -41,7 +41,7 @@ Currently, ArkISPAuth is the only supported authenticator type, which is derived
 - <b>Default</b> (`default`) - Default authenticator auth method for the authenticator
 - <b>Other</b> (`other`) - For custom implementations
 
-See [ark_auth_method.go](https://github.com/cyberark/ark-sdk-golang/blob/main/pkg/models/auth/ark_auth_method.go){:target="_blank" rel="noopener"} for more information about auth methods.
+See [ark_auth_method.go](https://github.com/Kalybus/ark-sdk-golang/blob/main/pkg/models/auth/ark_auth_method.go){:target="_blank" rel="noopener"} for more information about auth methods.
 
 ## SDK authenticate example
 
@@ -52,9 +52,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	authmodels "github.com/cyberark/ark-sdk-golang/pkg/models/auth"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/identity"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	authmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/identity"
 	"os"
 )
 

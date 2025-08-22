@@ -1,4 +1,4 @@
-![Ark SDK Golang](https://github.com/cyberark/ark-sdk-golang/blob/main/assets/sdk.png)
+![Ark SDK Golang](https://github.com/Kalybus/ark-sdk-golang/blob/main/assets/sdk.png)
 
 <p align="center">
     <a href="https://actions-badge.atrox.dev/cyberark/ark-sdk-golang/goto?ref=main" alt="Build">
@@ -7,7 +7,7 @@
     <a alt="Go Version">
         <img src="https://img.shields.io/github/go-mod/go-version/cyberark/ark-sdk-golang" />
     </a>
-    <a href="https://github.com/cyberark/ark-sdk-golang/blob/main/LICENSE.txt" alt="License">
+    <a href="https://github.com/Kalybus/ark-sdk-golang/blob/main/LICENSE.txt" alt="License">
         <img src="https://img.shields.io/github/license/cyberark/ark-sdk-golang?style=flat" alt="License" />
     </a>
 </p>
@@ -65,7 +65,7 @@ TL;DR
 =====
 
 ## Enduser
-![Ark SDK Enduser Usage](https://github.com/cyberark/ark-sdk-golang/blob/main/assets/ark_sdk_enduser_tldr.gif)
+![Ark SDK Enduser Usage](https://github.com/Kalybus/ark-sdk-golang/blob/main/assets/ark_sdk_enduser_tldr.gif)
 
 
 Installation
@@ -73,7 +73,7 @@ Installation
 
 One can install the SDK via the following command:
 ```shell
-go install github.com/cyberark/ark-sdk-golang
+go install github.com/Kalybus/ark-sdk-golang
 ```
 
 CLI Usage
@@ -583,10 +583,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	authmodels "github.com/cyberark/ark-sdk-golang/pkg/models/auth"
-	ssomodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/sia/sso"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/sia/sso"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	authmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
+	ssomodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sia/sso"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/sia/sso"
 	"os"
 )
 

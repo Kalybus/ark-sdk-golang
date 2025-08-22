@@ -1,7 +1,7 @@
 package auth
 
 import (
-	"github.com/cyberark/ark-sdk-golang/pkg/models/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/common"
 )
 
 // ArkTokenType is a string type that represents the type of token used in the Ark SIA.

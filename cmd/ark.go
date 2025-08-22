@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/cyberark/ark-sdk-golang/pkg/actions"
-	"github.com/cyberark/ark-sdk-golang/pkg/common"
-	"github.com/cyberark/ark-sdk-golang/pkg/profiles"
+	"github.com/Kalybus/ark-sdk-golang/pkg/actions"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/profiles"
 	"github.com/spf13/cobra"
 )
 

@@ -15,14 +15,14 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	"github.com/cyberark/ark-sdk-golang/pkg/common"
-	"github.com/cyberark/ark-sdk-golang/pkg/common/isp"
-	dbmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/sia/db"
-	ssomodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/sia/sso"
-	"github.com/cyberark/ark-sdk-golang/pkg/models/services/sia/workspaces/db"
-	"github.com/cyberark/ark-sdk-golang/pkg/services"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/sia/sso"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common/isp"
+	dbmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sia/db"
+	ssomodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sia/sso"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/services/sia/workspaces/db"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/sia/sso"
 	"github.com/golang-jwt/jwt/v5"
 )
 

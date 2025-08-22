@@ -7,11 +7,11 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	"github.com/cyberark/ark-sdk-golang/pkg/common"
-	"github.com/cyberark/ark-sdk-golang/pkg/common/isp"
-	"github.com/cyberark/ark-sdk-golang/pkg/models/services/sia/sshca"
-	"github.com/cyberark/ark-sdk-golang/pkg/services"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common/isp"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/services/sia/sshca"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services"
 )
 
 const (

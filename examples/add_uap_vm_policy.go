@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	authmodels "github.com/cyberark/ark-sdk-golang/pkg/models/auth"
-	commonmodels "github.com/cyberark/ark-sdk-golang/pkg/models/common"
-	commonuapmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/common"
-	uapsia "github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/sia/common"
-	uapvmmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/sia/vm"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/uap"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	authmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
+	commonmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/common"
+	commonuapmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/common"
+	uapsia "github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/sia/common"
+	uapvmmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/sia/vm"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/uap"
 )
 
 func main() {

@@ -9,11 +9,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	"github.com/cyberark/ark-sdk-golang/pkg/common"
-	"github.com/cyberark/ark-sdk-golang/pkg/common/isp"
-	k8smodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/sia/k8s"
-	"github.com/cyberark/ark-sdk-golang/pkg/services"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common/isp"
+	k8smodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sia/k8s"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services"
 )
 
 const (

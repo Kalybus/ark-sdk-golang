@@ -1,10 +1,10 @@
 package uap
 
 import (
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/uap/sca"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/uap/sia/db"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/uap/sia/vm"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/uap/sca"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/uap/sia/db"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/uap/sia/vm"
 )
 
 // ArkUAPAPI provides a unified API for accessing various UAP services, including SCA and SIA DB services.

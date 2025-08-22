@@ -1,8 +1,8 @@
 package actions
 
 import (
-	"github.com/cyberark/ark-sdk-golang/pkg/common"
-	"github.com/cyberark/ark-sdk-golang/pkg/profiles"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/profiles"
 	"os"
 
 	"github.com/spf13/cobra"

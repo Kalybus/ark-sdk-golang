@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	"github.com/cyberark/ark-sdk-golang/pkg/common"
-	commonmodels "github.com/cyberark/ark-sdk-golang/pkg/models/common"
-	commonuapmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/common"
-	scamodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/sca"
-	"github.com/cyberark/ark-sdk-golang/pkg/services"
-	uap "github.com/cyberark/ark-sdk-golang/pkg/services/uap/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common"
+	commonmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/common"
+	commonuapmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/common"
+	scamodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/sca"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services"
+	uap "github.com/Kalybus/ark-sdk-golang/pkg/services/uap/common"
 	"github.com/mitchellh/mapstructure"
 )
 

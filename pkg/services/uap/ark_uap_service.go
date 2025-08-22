@@ -2,11 +2,11 @@ package uap
 
 import (
 	"fmt"
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	"github.com/cyberark/ark-sdk-golang/pkg/common"
-	commonuapmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/common"
-	"github.com/cyberark/ark-sdk-golang/pkg/services"
-	uap "github.com/cyberark/ark-sdk-golang/pkg/services/uap/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common"
+	commonuapmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services"
+	uap "github.com/Kalybus/ark-sdk-golang/pkg/services/uap/common"
 	"github.com/mitchellh/mapstructure"
 	"reflect"
 )

@@ -12,11 +12,11 @@ import (
 	"time"
 
 	"github.com/Iilun/survey/v2"
-	"github.com/cyberark/ark-sdk-golang/pkg/common"
-	"github.com/cyberark/ark-sdk-golang/pkg/models"
-	"github.com/cyberark/ark-sdk-golang/pkg/models/auth"
-	commonmodels "github.com/cyberark/ark-sdk-golang/pkg/models/common"
-	"github.com/cyberark/ark-sdk-golang/pkg/models/common/identity"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
+	commonmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/common/identity"
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/toqueteos/webbrowser"
 )

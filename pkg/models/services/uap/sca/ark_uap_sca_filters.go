@@ -1,6 +1,6 @@
 package sca
 
-import "github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/common"
+import "github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/common"
 
 // ArkUAPSCAFilters represents filters specific to the SCA (Security Cloud Access) policies
 // within the UAP (Unified Access Policies) service.

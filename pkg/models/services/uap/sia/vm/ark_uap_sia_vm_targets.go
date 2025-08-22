@@ -3,7 +3,7 @@ package vm
 import (
 	"errors"
 
-	"github.com/cyberark/ark-sdk-golang/pkg/models/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/common"
 )
 
 // Possible operators for FQDN and IP rules in VM access policies.

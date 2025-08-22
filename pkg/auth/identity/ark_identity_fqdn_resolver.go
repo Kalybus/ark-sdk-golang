@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cyberark/ark-sdk-golang/pkg/common"
-	commonmodels "github.com/cyberark/ark-sdk-golang/pkg/models/common"
-	"github.com/cyberark/ark-sdk-golang/pkg/models/common/identity"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common"
+	commonmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/common/identity"
 )
 
 const (

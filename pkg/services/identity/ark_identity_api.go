@@ -1,10 +1,10 @@
 package identity
 
 import (
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/identity/directories"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/identity/roles"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/identity/users"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/identity/directories"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/identity/roles"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/identity/users"
 )
 
 // ArkIdentityAPI is a struct that provides access to the Ark Identity API as a wrapped set of services.

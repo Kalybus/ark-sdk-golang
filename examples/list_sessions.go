@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	authmodels "github.com/cyberark/ark-sdk-golang/pkg/models/auth"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/sm"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	authmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/sm"
 )
 
 func main() {

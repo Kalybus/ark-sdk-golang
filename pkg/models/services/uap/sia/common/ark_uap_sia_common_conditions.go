@@ -1,6 +1,6 @@
 package sia
 
-import "github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/common"
+import "github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/common"
 
 // ArkUAPSIACommonConditions represents common conditions for SIA policies.
 type ArkUAPSIACommonConditions struct {

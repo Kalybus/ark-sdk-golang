@@ -1,6 +1,6 @@
 package sca
 
-import "github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/common"
+import "github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/common"
 
 // ArkUAPSCACloudConsoleAccessPolicy represents the access policy for the SCA Cloud Console.
 type ArkUAPSCACloudConsoleAccessPolicy struct {

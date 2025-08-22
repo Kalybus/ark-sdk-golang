@@ -1,9 +1,9 @@
 package pcloud
 
 import (
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/pcloud/accounts"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/pcloud/safes"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/pcloud/accounts"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/pcloud/safes"
 )
 
 // ArkPCloudAPI is a struct that provides access to the Ark PCloud API as a wrapped set of services.

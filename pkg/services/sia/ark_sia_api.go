@@ -1,16 +1,16 @@
 package sia
 
 import (
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/sia/access"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/sia/k8s"
-	dbsecrets "github.com/cyberark/ark-sdk-golang/pkg/services/sia/secrets/db"
-	vmsecrets "github.com/cyberark/ark-sdk-golang/pkg/services/sia/secrets/vm"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/sia/sshca"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/sia/sso"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/sia/workspaces/db"
-	workspacesdb "github.com/cyberark/ark-sdk-golang/pkg/services/sia/workspaces/db"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/sia/workspaces/targetsets"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/sia/access"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/sia/k8s"
+	dbsecrets "github.com/Kalybus/ark-sdk-golang/pkg/services/sia/secrets/db"
+	vmsecrets "github.com/Kalybus/ark-sdk-golang/pkg/services/sia/secrets/vm"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/sia/sshca"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/sia/sso"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/sia/workspaces/db"
+	workspacesdb "github.com/Kalybus/ark-sdk-golang/pkg/services/sia/workspaces/db"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/sia/workspaces/targetsets"
 )
 
 // ArkSIAAPI is a struct that provides access to the Ark SIA API as a wrapped set of services.

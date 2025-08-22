@@ -7,9 +7,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/cyberark/ark-sdk-golang/pkg/common"
-	"github.com/cyberark/ark-sdk-golang/pkg/common/connections"
-	connectionsmodels "github.com/cyberark/ark-sdk-golang/pkg/models/common/connections"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common/connections"
+	connectionsmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/common/connections"
 	"golang.org/x/crypto/ssh"
 )
 

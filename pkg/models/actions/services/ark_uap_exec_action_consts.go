@@ -1,11 +1,11 @@
 package services
 
 import (
-	"github.com/cyberark/ark-sdk-golang/pkg/models/actions"
-	"github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/common"
-	"github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/sca"
-	"github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/sia/db"
-	"github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/sia/vm"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/actions"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/sca"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/sia/db"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/sia/vm"
 )
 
 // UAPSCAActionToSchemaMap defines the mapping of actions to schemas for the UAP SCA service.

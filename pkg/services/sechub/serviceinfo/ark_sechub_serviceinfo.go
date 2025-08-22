@@ -6,11 +6,11 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	"github.com/cyberark/ark-sdk-golang/pkg/common"
-	"github.com/cyberark/ark-sdk-golang/pkg/common/isp"
-	serviceinfomodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/sechub/serviceinfo"
-	"github.com/cyberark/ark-sdk-golang/pkg/services"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common/isp"
+	serviceinfomodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sechub/serviceinfo"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services"
 	"github.com/mitchellh/mapstructure"
 )
 

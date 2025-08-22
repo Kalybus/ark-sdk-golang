@@ -2,11 +2,11 @@ package actions
 
 import (
 	"fmt"
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	"github.com/cyberark/ark-sdk-golang/pkg/cli"
-	"github.com/cyberark/ark-sdk-golang/pkg/common"
-	"github.com/cyberark/ark-sdk-golang/pkg/common/args"
-	"github.com/cyberark/ark-sdk-golang/pkg/profiles"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/cli"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/common/args"
+	"github.com/Kalybus/ark-sdk-golang/pkg/profiles"
 	"github.com/fatih/color"
 	"github.com/spf13/cobra"
 	"time"

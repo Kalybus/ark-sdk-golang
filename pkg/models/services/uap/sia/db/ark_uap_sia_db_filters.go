@@ -1,6 +1,6 @@
 package db
 
-import "github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/common"
+import "github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/common"
 
 // ArkUAPSIADBFilters defines filters specific to the SIA DB policies within the UAP service.
 //

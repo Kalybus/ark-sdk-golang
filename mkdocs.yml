@@ -1,7 +1,7 @@
 site_name: Ark SDK
 site_description: Golang Ark SDK for CyberArk's Identity Security Platform
 site_author: CyberArk, Ofir Iluz
-repo_url: https://github.com/cyberark/ark-sdk-golang
+repo_url: https://github.com/Kalybus/ark-sdk-golang
 edit_uri: edit/main/docs
 
 nav:

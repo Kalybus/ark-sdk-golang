@@ -15,10 +15,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	authmodels "github.com/cyberark/ark-sdk-golang/pkg/models/auth"
-	ssomodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/sia/sso"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/sia/sso"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	authmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
+	ssomodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sia/sso"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/sia/sso"
 	"os"
 )
 
@@ -81,11 +81,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	authmodels "github.com/cyberark/ark-sdk-golang/pkg/models/auth"
-	vmsecretsmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/sia/secrets/vm"
-	targetsetsmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/sia/workspaces/targetsets"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/sia"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	authmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
+	vmsecretsmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sia/secrets/vm"
+	targetsetsmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/sia/workspaces/targetsets"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/sia"
 	"os"
 )
 
@@ -151,10 +151,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	authmodels "github.com/cyberark/ark-sdk-golang/pkg/models/auth"
-	cmgrmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/cmgr"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/cmgr"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	authmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
+	cmgrmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/cmgr"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/cmgr"
 	"os"
 )
 
@@ -212,9 +212,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	authmodels "github.com/cyberark/ark-sdk-golang/pkg/models/auth"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/pcloud"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	authmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/pcloud"
 	"os"
 )
 
@@ -266,10 +266,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	authmodels "github.com/cyberark/ark-sdk-golang/pkg/models/auth"
-	directoriesmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/identity/directories"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/identity"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	authmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
+	directoriesmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/identity/directories"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/identity"
 	"os"
 )
 
@@ -318,9 +318,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	authmodels "github.com/cyberark/ark-sdk-golang/pkg/models/auth"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/sm"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	authmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/sm"
 	"os"
 )
 
@@ -370,14 +370,14 @@ package main
 
 import (
 	"fmt"
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	authmodels "github.com/cyberark/ark-sdk-golang/pkg/models/auth"
-	commonmodels "github.com/cyberark/ark-sdk-golang/pkg/models/common"
-	"github.com/cyberark/ark-sdk-golang/pkg/models/services/sia/workspaces/db"
-	commonuapmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/common"
-	uapsia "github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/sia/common"
-	uapdbmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/sia/db"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/uap"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	authmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
+	commonmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/common"
+	"github.com/Kalybus/ark-sdk-golang/pkg/models/services/sia/workspaces/db"
+	commonuapmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/common"
+	uapsia "github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/sia/common"
+	uapdbmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/sia/db"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/uap"
 	"os"
 )
 
@@ -476,13 +476,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	authmodels "github.com/cyberark/ark-sdk-golang/pkg/models/auth"
-	commonmodels "github.com/cyberark/ark-sdk-golang/pkg/models/common"
-	commonuapmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/common"
-	uapsia "github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/sia/common"
-	uapvmmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/sia/vm"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/uap"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	authmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
+	commonmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/common"
+	commonuapmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/common"
+	uapsia "github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/sia/common"
+	uapvmmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/sia/vm"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/uap"
 	"os"
 )
 
@@ -587,12 +587,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/cyberark/ark-sdk-golang/pkg/auth"
-	authmodels "github.com/cyberark/ark-sdk-golang/pkg/models/auth"
-	commonmodels "github.com/cyberark/ark-sdk-golang/pkg/models/common"
-	commonuapmodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/common"
-	uapscamodels "github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/sca"
-	"github.com/cyberark/ark-sdk-golang/pkg/services/uap"
+	"github.com/Kalybus/ark-sdk-golang/pkg/auth"
+	authmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/auth"
+	commonmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/common"
+	commonuapmodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/common"
+	uapscamodels "github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/sca"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/uap"
 	"os"
 )
 

@@ -1,6 +1,6 @@
 package sca
 
-import "github.com/cyberark/ark-sdk-golang/pkg/models/services/uap/common"
+import "github.com/Kalybus/ark-sdk-golang/pkg/models/services/uap/common"
 
 // ArkUAPSCAConditions represents SCA-specific conditions.
 // It is currently identical to ArkUAPConditions but defined separately for clarity

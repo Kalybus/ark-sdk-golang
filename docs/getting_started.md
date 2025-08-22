@@ -9,7 +9,7 @@ description: Getting started
 
 You can install the SDK via go modules using the following command:
 ```shell linenums="0"
-go install github.com/cyberark/ark-sdk-golang
+go install github.com/Kalybus/ark-sdk-golang
 ```
 
 Make sure that the PATH environment variable points to the go binary path, for example:

@@ -1,6 +1,6 @@
 package directories
 
-import "github.com/cyberark/ark-sdk-golang/pkg/models/common/identity"
+import "github.com/Kalybus/ark-sdk-golang/pkg/models/common/identity"
 
 // Possible entity types
 const (
