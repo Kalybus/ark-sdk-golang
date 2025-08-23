@@ -4,6 +4,7 @@ import (
 	"github.com/Kalybus/ark-sdk-golang/pkg/models/actions"
 	pcloudaccounts "github.com/Kalybus/ark-sdk-golang/pkg/models/services/pcloud/accounts"
 	pcloudsafes "github.com/Kalybus/ark-sdk-golang/pkg/models/services/pcloud/safes"
+	pcloudsshkeys "github.com/Kalybus/ark-sdk-golang/pkg/models/services/pcloud/sshkeys"
 )
 
 // AccountsActionToSchemaMap is a map that defines the mapping between Ark PCloud action names and their corresponding schema types.
@@ -58,11 +59,24 @@ var SafesAction = actions.ArkServiceActionDefinition{
 	Schemas:    SafesActionToSchemaMap,
 }
 
+// SSHKeysActionToSchemaMap is a map that defines mapping between Ark PCloud SSH Keys action names and their corresponding schema types.
+var SSHKeysActionToSchemaMap = map[string]interface{}{
+	"ssh-key":      &pcloudsshkeys.ArkPCloudGetSSHKey{},
+	"ssh-key-file": &pcloudsshkeys.ArkPCloudGetSSHKeyFile{},
+}
+
+// SSHKeysAction is a struct that defines the SSH Keys action for the Ark PCloud service.
+var SSHKeysAction = actions.ArkServiceActionDefinition{
+	ActionName: "ssh-keys",
+	Schemas:    SSHKeysActionToSchemaMap,
+}
+
 // PCloudActions is a struct that defines the Ark PCloud action for the Ark service.
 var PCloudActions = &actions.ArkServiceActionDefinition{
 	ActionName: "pcloud",
 	Subactions: []*actions.ArkServiceActionDefinition{
 		&AccountsAction,
 		&SafesAction,
+		&SSHKeysAction,
 	},
 }
