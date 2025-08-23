@@ -18,6 +18,7 @@ import (
 	"github.com/Kalybus/ark-sdk-golang/pkg/services/identity/users"
 	"github.com/Kalybus/ark-sdk-golang/pkg/services/pcloud/accounts"
 	"github.com/Kalybus/ark-sdk-golang/pkg/services/pcloud/safes"
+	"github.com/Kalybus/ark-sdk-golang/pkg/services/pcloud/sshkeys"
 	"github.com/Kalybus/ark-sdk-golang/pkg/services/sechub/configuration"
 	"github.com/Kalybus/ark-sdk-golang/pkg/services/sechub/filters"
 	"github.com/Kalybus/ark-sdk-golang/pkg/services/sechub/scans"
@@ -260,6 +261,20 @@ func (api *ArkAPI) PCloudAccounts() (*accounts.ArkPCloudAccountsService, error) 
 	var pcloudAccountsBaseService services.ArkService = pcloudAccountsService
 	api.services[accounts.PCloudAccountsServiceConfig.ServiceName] = &pcloudAccountsBaseService
 	return pcloudAccountsService, nil
+}
+
+// PCloudSSHKeys returns the PCloudSSHKeys service from the ArkAPI instance. If the service is not already created, it creates a new one.
+func (api *ArkAPI) PCloudSSHKeys() (*sshkeys.ArkPCloudSSHKeysService, error) {
+	if sshKeysServiceInterface, ok := api.services[sshkeys.PCloudSSHKeysServiceConfig.ServiceName]; ok {
+		return (*sshKeysServiceInterface).(*sshkeys.ArkPCloudSSHKeysService), nil
+	}
+	sshKeysService, err := sshkeys.NewArkPCloudSSHKeysService(api.loadServiceAuthenticators(sshkeys.PCloudSSHKeysServiceConfig)...)
+	if err != nil {
+		return nil, err
+	}
+	var sshKeysBaseService services.ArkService = sshKeysService
+	api.services[sshkeys.PCloudSSHKeysServiceConfig.ServiceName] = &sshKeysBaseService
+	return sshKeysService, nil
 }
 
 // IdentityDirectories returns the IdentityDirectories service from the ArkAPI instance. If the service is not already created, it creates a new one.
