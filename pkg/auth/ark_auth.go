@@ -120,8 +120,6 @@ func (a *ArkAuthBase) Authenticate(profile *models.ArkProfile, authProfile *auth
 				token, _ = a.Authenticator.performRefreshAuthentication(profile, authProfile, token)
 				if token != nil {
 					tokenRefreshed = true
-				} else {
-					token = nil
 				}
 			} else {
 				token = nil
@@ -133,22 +131,22 @@ func (a *ArkAuthBase) Authenticate(profile *models.ArkProfile, authProfile *auth
 		if err != nil {
 			return nil, err
 		}
-		if token != nil && a.CacheAuthentication && a.CacheKeyring != nil {
-			err := a.CacheKeyring.SaveToken(profile, token, a.ResolveCachePostfix(authProfile), false)
-			if err != nil {
-				return nil, err
-			}
+		if token != nil {
+			tokenRefreshed = true
 		}
 	} else if refreshAuth && !tokenRefreshed {
 		token, err = a.Authenticator.performRefreshAuthentication(profile, authProfile, token)
 		if err != nil {
 			return nil, err
 		}
-		if token != nil && a.CacheAuthentication && a.CacheKeyring != nil {
-			err := a.CacheKeyring.SaveToken(profile, token, a.ResolveCachePostfix(authProfile), false)
-			if err != nil {
-				return nil, err
-			}
+		if token != nil {
+			tokenRefreshed = true
+		}
+	}
+	if token != nil && tokenRefreshed && a.CacheAuthentication && a.CacheKeyring != nil {
+		err = a.CacheKeyring.SaveToken(profile, token, a.ResolveCachePostfix(authProfile), false)
+		if err != nil {
+			return nil, err
 		}
 	}
 	a.Token = token
